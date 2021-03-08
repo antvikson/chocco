@@ -1,0 +1,11 @@
+.benefits-section {
+  position: relative;
+  background: url("../../img/decor/leafs/leafshadowgrey.svg") left 0 center no-repeat;
+
+  &:before {
+    content: url("../../img/decor/berries/bars&berries.svg");
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+  }
+}

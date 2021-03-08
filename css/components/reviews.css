@@ -1,0 +1,8 @@
+reviews__display {
+  background: #f8faf9;
+  padding: 50px 45px 34px;
+}
+
+.reviews__display-inner {
+  display: flex;
+}
