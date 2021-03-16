@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="css/main.css">
   <title>Chocco</title>
 </head>
+
 <body>
   <div class="wrapper">
     <div class="maincontent">
@@ -49,23 +51,23 @@
           <div class="hero__title-section">
             <h1 class="hero__main-title">Натуральные шоколадные батончики</h1>
             <div class="hero__title-desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</div>
-            <a href="" class="btn btn--theme--white">Заказать</a>
+            <input type="submit" value="Заказать" class="btn btn--theme--white">
           </div>
           <div class="hero__icons-section">
             <ul class="features">
-              <li class="featture__item feature">
+              <li class="feature__item feature">
                 <div class="feature__icon">
                   <img src="./img/content/icons/icon_leaf.svg" alt="leaf">
                 </div>
                 <div class="feature__text">100% натуральный продукт</div>
               </li>
-              <li class="featture__item feature">
+              <li class="feature__item feature">
                 <div class="feature__icon">
                   <img src="./img/content/icons/delivery_time.svg" alt="delivery time">
                 </div>
                 <div class="feature__text">3-5 дней доставка по РФ</div>
               </li>
-              <li class="featture__item feature">
+              <li class="featxure__item feature">
                 <div class="feature__icon">
                   <img src="./img/content/icons/figure.svg" alt="figure">
                 </div>
@@ -81,7 +83,7 @@
             <h2 class="section__title headline__title">Почему chocco?</h2>
             <div class="headline__subtitle">
               В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно взять с собой.
-            </div> 
+            </div>
           </div>
           <ul class="benefits">
             <li class="benefits__item benefit">
@@ -132,7 +134,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section reviews-section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews">
@@ -145,7 +147,9 @@
                   <h3 class="reviews__title">Лучший перекус</h3>
                   <div class="reviews__text">
                     <p>
-                      Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно.
+                      Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за
+                      компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он
+                      всегда под рукой. Это приятно и удобно.
                     </p>
                   </div>
                   <div class="reviews__autor">Алена Хмельницкая</div>
@@ -172,8 +176,114 @@
           </div>
         </div>
       </section>
+      <section class="section order-section section--font--color--green">
+        <div class="container">
+          <h2 class="section__title">Закажите доставку</h2>
+          <form class="form">
+            <div class="form__col">
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Имя</div>
+                  <input type="text" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Телефон</div>
+                  <input type="text" class="form__input">
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Улица</div>
+                  <input type="text" class="form__input">
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Дом</div>
+                  <input type="text" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Корпус</div>
+                  <input type="text" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Квартира</div>
+                  <input type="text" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Этаж</div>
+                  <input type="text" class="form__input">
+                </label>
+              </div>
+            </div>
+            <div class="form__col">
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Комментарий</div>
+                  <textarea class="form__input form__input--textarea"></textarea>
+                </label>
+              </div>
+              <div class="form__controls">
+                <label class="radio">
+                  <input type="radio" name="options" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Потребуется сдача</div>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="options" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Оплата картой</div>
+                </label>
+              </div>
+              <div class="form__controls">
+                <label class="radio radio--checkbox">
+                  <input type="radio" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Не перезванивать</div>
+                </label>
+              </div>
+              <div class="form__btns">
+                <input type="submit" value="Заказать" class="btn btn--theme--green">
+                <input type="reset" value="Очистить" class="btn btn--theme--transparent">
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
       <div style="height: 600px;"></div>
     </div>
   </div>
+  <nav class="fixed-menu">
+    <ul class="fixed-menu__list">
+      <li class="fixed-menu__item fixed-menu__item--active">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+    </ul>
+  </nav>
 </body>
+
 </html>

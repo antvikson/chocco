@@ -1,6 +1,10 @@
 .feature {
   display: flex;
   margin-right: 46px;
+
+  &:last-child {
+    margin-right: 0;
+  }
   }
 
 .feature__icon {

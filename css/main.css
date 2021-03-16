@@ -47,9 +47,13 @@ ul {
   padding: 0;
   margin: 0;
 }
-
-li {
+ul li {
   list-style-type: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 footer {
@@ -72,7 +76,7 @@ img {
 }
 
 .hero {
-  background: url("../../img/decor/leafs&berries/composition.svg") left 78% center no-repeat, url("../../img/decor/leafs/leafshadowblue.svg") right bottom no-repeat;
+  background: url("../img/decor/leafs&berries/composition.svg") left 78% center no-repeat, url("../img/decor/leafs/leafshadowblue.svg") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
   min-height: 650px;
@@ -83,13 +87,13 @@ img {
   position: absolute;
   bottom: -40px;
   left: 2%;
-  content: url("../../img/decor/leafs/leaf3.svg");
+  content: url("../img/decor/leafs/leaf3.svg");
 }
 .hero::after {
   position: absolute;
   bottom: -40px;
   right: 0;
-  content: url("../../img/decor/leafs/leaf1.svg");
+  content: url("../img/decor/leafs/leaf1.svg");
 }
 
 .hero__title-section {
@@ -101,19 +105,19 @@ img {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 50px;
+  padding: 26px 0 84px;
 }
 
 .hero__main-title {
   font-size: 48px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 22px;
 }
 
 .hero__title-desc {
   font-size: 21px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
   padding-right: 15%;
 }
 
@@ -121,7 +125,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 84px;
 }
 
 .menu__list {
@@ -168,6 +171,9 @@ img {
   display: flex;
   margin-right: 46px;
 }
+.feature:last-child {
+  margin-right: 0;
+}
 
 .feature__icon {
   width: 45px;
@@ -186,6 +192,8 @@ img {
   border-radius: 50px;
   line-height: 1;
   padding: 21px 41px;
+  border: none;
+  transition: 0.2s;
 }
 .btn--theme--white {
   background: #fff;
@@ -195,6 +203,24 @@ img {
   color: #fff;
   background: #365a49;
 }
+.btn--theme--green {
+  background: #365a49;
+  color: #fff;
+}
+.btn--theme--green:hover {
+  color: #365a49;
+  background: #fff;
+}
+.btn--theme--transparent {
+  background: transparent;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+}
+.btn--theme--transparent:hover {
+  color: #365a49;
+}
 
 .section {
   height: 100vh;
@@ -202,6 +228,12 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.section--font--color--green {
+  color: #365a49;
+}
+.section--font--color--green .section__title {
+  color: inherit;
 }
 
 .section__title {
@@ -236,7 +268,7 @@ img {
   position: relative;
 }
 .benefits__item:before {
-  content: url("../../img/content/icons/separator.svg");
+  content: url("../img/content/icons/separator.svg");
   position: absolute;
   top: 30px;
   right: 0;
@@ -287,10 +319,10 @@ img {
 
 .benefits-section {
   position: relative;
-  background: url("../../img/decor/leafs/leafshadowgrey.svg") left 0 center no-repeat;
+  background: url("../img/decor/leafs/leafshadowgrey.svg") left 0 center no-repeat;
 }
 .benefits-section:before {
-  content: url("../../img/decor/berries/bars&berries.svg");
+  content: url("../img/decor/berries/bars&berries.svg");
   position: absolute;
   bottom: -55px;
   left: 0;
@@ -298,7 +330,7 @@ img {
 
 .reviews__display {
   padding: 45px 40px 26px;
-  background: #f8faf9 url("../../img/decor/leafs&berries/shadowleafs&berries.svg") right top no-repeat;
+  background: #f8faf9 url("../img/decor/leafs&berries/shadowleafs&berries.svg") right top no-repeat;
   margin-bottom: 20px;
   overflow: hidden;
   position: relative;
@@ -383,4 +415,158 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.reviews-section {
+  position: relative;
+  background: url("../img/decor/berries/berrystrawberry.svg") right 5% top 20px no-repeat;
+}
+.reviews-section:after {
+  content: url("../img/decor/berries/berriesreviews.svg");
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+}
+.reviews-section:before {
+  content: url("../img/decor/leafs/shadowleafpeviews.svg");
+  position: absolute;
+  bottom: -150px;
+  left: 0;
+}
+
+.order-section {
+  background: url("../img/decor/berries/orderberry.svg") left 5% bottom 70px no-repeat, url("../img/decor/leafs/orderleaf.svg") right 1% bottom 60px no-repeat;
+  background-color: #F8FAF9;
+}
+
+.form {
+  display: flex;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 26px;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 24px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__input {
+  width: 100%;
+  padding: 18px 11px;
+  border-radius: 4px;
+  border: solid 3px transparent;
+}
+.form__input--textarea {
+  height: 160px;
+  resize: none;
+}
+.form__input:focus {
+  border-color: #dee2bd;
+  outline: none;
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.form__input--textarea {
+  margin-bottom: 16px;
+}
+
+.form__btns {
+  padding: 24px 0;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+  margin-right: 20px;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 4px;
+}
+.radio--checkbox .radio__visible::before {
+  background: url("../img/checkmark.svg") center center no-repeat;
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 14px;
+}
+.radio__visible:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #365a49;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 30%;
+  right: 3%;
+  z-index: 100;
+}
+
+.fixed-menu__item {
+  margin-bottom: 5px;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #fff;
+}
+
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

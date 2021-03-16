@@ -1,0 +1,19 @@
+.reviews-section {
+  position: relative;
+  background: url("../img/decor/berries/berrystrawberry.svg") right 5% top 20px no-repeat;
+  
+  &:after {
+    content: url("../img/decor/berries/berriesreviews.svg");
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+  }
+
+  &:before {
+    content: url("../img/decor/leafs/shadowleafpeviews.svg");
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+  }
+
+}
